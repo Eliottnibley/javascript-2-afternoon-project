@@ -247,7 +247,15 @@ function addItem (groceryList, item)
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-
+function maker ()
+{
+  let array = []
+  for (i = 0; i < 215; i++)
+  {
+    array.push(i+1)
+  }
+  return array
+}
 
 
 
@@ -263,7 +271,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+
 
 
 
