@@ -49,7 +49,7 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
 
-//Code here
+// code here
 
 /*
   After you do the above, alert your entire backPack object.
