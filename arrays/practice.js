@@ -112,20 +112,27 @@ console.log(user2)
   Create an empty object called methodCollection.
 */
 
-//Code Here
+let methodCollection = {}
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
-//Code Here
+methodCollection.alertHello = function ()
+{
+  alert('hello')
+}
+methodCollection.logHello = function () {
+  console.log('hello')
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+//methodCollection.alertHello()
+//methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -134,7 +141,14 @@ console.log(user2)
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson (nam, bday, sn) {
+  let person = {
+    name: nam,
+    birthday: bday,
+    ssn: sn
+  }
+  return person
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -143,4 +157,12 @@ console.log(user2)
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard (cardNum, expDate, sec)
+{
+  let newCard = {
+    cardNumber: cardNum,
+    expirationDate: expDate,
+    securityCode: sec
+  }
+  return newCard
+}
