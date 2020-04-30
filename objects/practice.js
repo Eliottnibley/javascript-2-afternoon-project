@@ -176,10 +176,13 @@ var getRandomArbitrary = function() {
 function finder (arr)
 {
   let randomNumber = getRandomArbitrary()
-
-  for (i = 0; i < arr.length; i++)
+  if (arr.includes(randomNumber))
   {
-    
+    return true
+  }
+  else 
+  {
+    return false
   }
 }
 
@@ -210,7 +213,31 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
+function removeItem (groceryList, item)
+{
+  if (!groceryList || !item)
+  {
+    return []
+  }
+  for ( i= 0; i < groceryList.length; i++)
+  {
+    if (groceryList[i] === item)
+    {
+      groceryList.splice(i, 1)
+    }
+  }
+  return groceryList
+}
+
+function addItem (groceryList, item)
+{
+  if (!groceryList || !item)
+  {
+    return []
+  }
+  groceryList.push(item)
+  return groceryList
+}
 
 
 
@@ -220,7 +247,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-//Code Here
+
 
 
 
